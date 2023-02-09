@@ -12,6 +12,11 @@ struct Home: View {
     @State var isEditing:Bool = false
     var body: some View {
         VStack {
+            Image("AIBuddy")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 111)
+            
             ScrollView(showsIndicators: false){
                 VStack(alignment:.leading, spacing: 16){
                     ForEach(MOCK_MESSAGE){ message in
